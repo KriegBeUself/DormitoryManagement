@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <package name="struts" extends="struts-default" namespace="/">
+        <action name="GoLogin" class="com.dormitory.action.GoLogin">
+            <result name="input">/Login.jsp</result>
+            <result name="success">/Index.jsp</result>
+        </action>
+        <action name="Quit" class="com.dormitory.action.Quit">
+            <result name="success">/Login.jsp</result>
+        </action>
+        <action name="PasswordUpdateSave" class="com.dormitory.action.PasswordUpdateSave">
+            <result name="input">/PasswordUpdate.jsp</result>
+        </action>
+
+        <action name="TeacherManager" class="com.dormitory.action.TeacherManager">
+            <result name="success">/TeacherManager.jsp</result>
+        </action>
+        <action name="TeacherAddSave" class="com.dormitory.action.TeacherAddSave">
+        </action>
+        <action name="TeacherUpdate" class="com.dormitory.action.TeacherUpdate">
+            <result name="success">/TeacherUpdate.jsp</result>
+        </action>
+        <action name="TeacherUpdateSave" class="com.dormitory.action.TeacherUpdateSave">
+        </action>
+        <action name="TeacherDel" class="com.dormitory.action.TeacherDel">
+            <result name="success" type="chain">TeacherManager</result>
+        </action>
+
+        <action name="StudentManager" class="com.dormitory.action.StudentManager">
+            <result name="success">/StudentManager.jsp</result>
+        </action>
+        <action name="StudentAddSave" class="com.dormitory.action.StudentAddSave">
+        </action>
+        <action name="StudentUpdate" class="com.dormitory.action.StudentUpdate">
+            <result name="success">/StudentUpdate.jsp</result>
+        </action>
+        <action name="StudentUpdateSave" class="com.dormitory.action.StudentUpdateSave">
+        </action>
+        <action name="StudentDel" class="com.dormitory.action.StudentDel">
+            <result name="success" type="chain">StudentManager</result>
+        </action>
+
+        <action name="BuildingManager" class="com.dormitory.action.BuildingManager">
+            <result name="success">/BuildingManager.jsp</result>
+        </action>
+        <action name="BuildingAddSave" class="com.dormitory.action.BuildingAddSave">
+        </action>
+        <action name="BuildingUpdate" class="com.dormitory.action.BuildingUpdate">
+            <result name="success">/BuildingUpdate.jsp</result>
+        </action>
+        <action name="BuildingUpdateSave" class="com.dormitory.action.BuildingUpdateSave">
+        </action>
+        <action name="BuildingDel" class="com.dormitory.action.BuildingDel">
+            <result name="success" type="chain">BuildingManager</result>
+        </action>
+
+        <action name="DomitoryAdd" class="com.dormitory.action.DomitoryAdd">
+            <result name="success">/DomitoryAdd.jsp</result>
+        </action>
+        <action name="DomitoryManager" class="com.dormitory.action.DomitoryManager">
+            <result name="success">/DomitoryManager.jsp</result>
+        </action>
+        <action name="DomitoryAddSave" class="com.dormitory.action.DomitoryAddSave">
+        </action>
+        <action name="DomitoryUpdate" class="com.dormitory.action.DomitoryUpdate">
+            <result name="success">/DomitoryUpdate.jsp</result>
+        </action>
+        <action name="DomitoryUpdateSave" class="com.dormitory.action.DomitoryUpdateSave">
+        </action>
+        <action name="DomitoryDel" class="com.dormitory.action.DomitoryDel">
+            <result name="success" type="chain">DomitoryManager</result>
+        </action>
+
+        <action name="StudentRZ" class="com.dormitory.action.StudentRZ">
+            <result name="success">/StudentRZ.jsp</result>
+        </action>
+        <action name="StudentRZSave" class="com.dormitory.action.StudentRZSave">
+        </action>
+        <action name="StudentTH" class="com.dormitory.action.StudentTH">
+            <result name="success">/StudentTH2.jsp</result>
+        </action>
+        <action name="StudentTHSave" class="com.dormitory.action.StudentTHSave">
+        </action>
+        <action name="StudentQC" class="com.dormitory.action.StudentQC">
+            <result name="success">/StudentQC2.jsp</result>
+        </action>
+        <action name="StudentQCSave" class="com.dormitory.action.StudentQCSave">
+        </action>
+
+        <action name="TBManager" class="com.dormitory.action.TBManager">
+            <result name="success">/TBManager.jsp</result>
+        </action>
+        <action name="TBAddSave" class="com.dormitory.action.TBAddSave">
+        </action>
+        <action name="TBDel" class="com.dormitory.action.TBDel">
+        </action>
+
+        <action name="MyStudent" class="com.dormitory.action.MyStudent">
+            <result name="success">/MyStudent.jsp</result>
+        </action>
+        <action name="MyStudentList" class="com.dormitory.action.MyStudentList">
+            <result name="success">/MyStudentList.jsp</result>
+        </action>
+
+        <action name="LogAdd" class="com.dormitory.action.LogAdd">
+            <result name="success">/LogAdd.jsp</result>
+        </action>
+        <action name="LogAddSave" class="com.dormitory.action.LogAddSave">
+        </action>
+
+        <action name="MyLog" class="com.dormitory.action.MyLog">
+            <result name="success">/MyLog.jsp</result>
+        </action>
+        <action name="MyLogList" class="com.dormitory.action.MyLogList">
+            <result name="success">/MyLogList.jsp</result>
+        </action>
+
+        <action name="StudentLog" class="com.dormitory.action.StudentLog">
+            <result name="success">/StudentLog.jsp</result>
+        </action>
+
+        <action name="AdminLog" class="com.dormitory.action.AdminLog">
+            <result name="success">/AdminLog.jsp</result>
+        </action>
+        <action name="AdminLogList" class="com.dormitory.action.AdminLogList">
+            <result name="success">/AdminLogList.jsp</result>
+        </action>
+
+        <action name="OutList" class="com.dormitory.action.OutList">
+            <result name="success">/OutList.jsp</result>
+        </action>
+    </package>
+</struts>
